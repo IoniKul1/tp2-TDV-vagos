@@ -1,22 +1,12 @@
 #ifndef CW_H
 #define CW_H
 
-#include "VRPLIBReader.h"
+#include "../Clases/VRPLIBReader.h"
 #include <vector>
 #include <tuple>
+#include "../Clases/route.h"
+#include "../Clases/saving.h"
 
-struct Saving {
-    int i, j;
-    double saving;
-    bool operator<(const Saving& other) const {
-        return saving > other.saving; // Para ordenar de mayor a menor
-    }
-};
-
-struct Route {
-    std::vector<int> nodes; // incluye depósito al principio y fin
-    int total_demand;
-};
 
 class ClarkeWrightSolver {
 public:
@@ -29,6 +19,8 @@ private:
     std::vector<std::vector<double>> dist;
     std::vector<int> demands;
     int n;
+    int max_vehicles;
+    std::vector<Node> Nodes;
 
     std::vector<Route> routes;
     std::vector<int> node_to_route;

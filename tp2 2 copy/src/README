@@ -4,7 +4,7 @@ g++ -std=c++11 -o my_vrp_solver main.cpp VRPLIBReader.cpp
 
 Si quieren agregar un nivel de optimización para mejorar los tiempos de ejecución, 
 
-g++ -std=c++11 -O2 -o my_vrp_solver main.cpp VRPLIBReader.cpp
+
 
 INSTANCIAS
 

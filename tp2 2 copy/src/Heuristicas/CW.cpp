@@ -8,17 +8,18 @@ ClarkeWrightSolver::ClarkeWrightSolver(const VRPLIBReader& reader)
       capacity(reader.getCapacity()),
       dist(reader.getDistanceMatrix()),
       demands(reader.getDemands()),
-      n(reader.getDimension())
+      n(reader.getDimension()),
+      max_vehicles(reader.getNumVehicles()), // agregado para verificar límite de vehículos
+      Nodes(reader.getNodes())
 {
     node_to_route.resize(n + 1, -1); // indexa desde 1
 }
 
 void ClarkeWrightSolver::initialize_routes() {
-    for (int i = 1; i <= n; ++i) {
+    for (int i = 1; i <= n; ++i) { 
         if (i == depot) continue;
 
         if (demands[i] > capacity) {
-            std::cerr << "Cliente " << i << " tiene demanda mayor a la capacidad." << std::endl;
             continue;
         }
 
@@ -76,6 +77,28 @@ bool ClarkeWrightSolver::merge_routes(int i, int j, const std::vector<Saving>& s
 }
 
 std::vector<Route> ClarkeWrightSolver::solve() {
+    bool hasError = false;
+
+    if (max_vehicles <= 0) {
+        std::cerr << "❌ Error: La instancia tiene VEHICLES <= 0\n";
+        hasError = true;
+    }
+
+    if (capacity <= 0) {
+        std::cerr << "❌ Error: La capacidad del vehículo es inválida (<= 0)\n";
+        hasError = true;
+    }
+
+    if (Nodes.size() != n) {
+        std::cerr << "❌ Error: La cantidad de nodos no coincide con la dimensión declarada (" << Nodes.size() << " vs " << n << ")\n";
+        hasError = true;
+    }
+
+ 
+
+    if (hasError) return {};
+
+
     initialize_routes();
     std::vector<Saving> savings = compute_savings();
 
@@ -90,6 +113,7 @@ std::vector<Route> ClarkeWrightSolver::solve() {
             final_routes.push_back(r);
         }
     }
+
 
     return final_routes;
 }
