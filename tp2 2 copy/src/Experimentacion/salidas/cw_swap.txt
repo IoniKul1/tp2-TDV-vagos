@@ -1,0 +1,36 @@
+[1] Iniciando programa...
+[2] Leyendo instancia...
+[3] Instancia leída correctamente.
+[4] 📦 Instancia:  E076-10e
+[5] Ejecutando Clarke & Wright...
+[6] 🔧 Clarke & Wright Solution obtenida.
+[7] Aplicando operadores...
+   - Aplicando swap
+[8] Mostrando solución...
+Ruta 1 (demanda: 30): 1 69 76 1 
+Ruta 2 (demanda: 102): 1 2 44 42 43 65 23 1 
+Ruta 3 (demanda: 60): 1 4 25 50 45 1 
+Ruta 4 (demanda: 56): 1 31 30 46 1 
+Ruta 5 (demanda: 74): 1 6 38 48 49 1 
+Ruta 6 (demanda: 58): 1 52 34 7 1 
+Ruta 7 (demanda: 77): 1 54 15 60 1 
+Ruta 8 (demanda: 47): 1 9 20 55 1 
+Ruta 9 (demanda: 50): 1 10 26 56 1 
+Ruta 10 (demanda: 96): 1 11 32 39 59 1 
+Ruta 11 (demanda: 83): 1 12 66 67 1 
+Ruta 12 (demanda: 33): 1 13 40 73 1 
+Ruta 13 (demanda: 26): 1 14 58 1 
+Ruta 14 (demanda: 57): 1 16 21 61 71 72 1 
+Ruta 15 (demanda: 62): 1 17 24 57 64 1 
+Ruta 16 (demanda: 63): 1 33 19 51 1 
+Ruta 17 (demanda: 73): 1 22 37 70 62 75 1 
+Ruta 18 (demanda: 79): 1 3 29 63 74 1 
+Ruta 19 (demanda: 43): 1 27 8 36 1 
+Ruta 20 (demanda: 36): 1 28 53 1 
+Ruta 21 (demanda: 106): 1 5 35 47 68 1 
+Ruta 22 (demanda: 53): 1 41 18 1 
+Costo total: 1358.62
+[9] Preguntando si desea testear...
+
+¿Querés testear la validez de esta solución? (s/n): [10] Validando...
+[11] Fin del programa.

@@ -1,0 +1,24 @@
+[1] Iniciando programa...
+[2] Leyendo instancia...
+[3] Instancia leída correctamente.
+[4] 📦 Instancia:  E076-10e
+[5] Ejecutando Nearest Insertion...
+[6] 🔧 Nearest Insertion Solution obtenida.
+[7] Aplicando operadores...
+   - Aplicando swap
+[8] Mostrando solución...
+Ruta 1 (demanda: 139): 1 27 13 4 45 17 50 25 57 1 
+Ruta 2 (demanda: 139): 1 56 35 28 53 14 16 47 5 1 
+Ruta 3 (demanda: 126): 1 51 19 26 10 33 18 1 
+Ruta 4 (demanda: 139): 1 36 55 20 60 12 54 8 1 
+Ruta 5 (demanda: 140): 1 74 3 75 31 49 6 58 46 1 
+Ruta 6 (demanda: 133): 1 7 64 24 2 23 29 63 76 1 
+Ruta 7 (demanda: 139): 1 9 15 67 66 39 59 73 1 
+Ruta 8 (demanda: 140): 1 69 22 70 72 61 71 21 38 37 48 1 
+Ruta 9 (demanda: 139): 1 52 34 44 42 43 65 62 30 1 
+Ruta 10 (demanda: 130): 1 11 32 40 41 68 1 
+Costo total: 1071.29
+[9] Preguntando si desea testear...
+
+¿Querés testear la validez de esta solución? (s/n): [10] Validando...
+[11] Fin del programa.
