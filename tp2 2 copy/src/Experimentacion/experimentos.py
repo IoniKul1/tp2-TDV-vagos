@@ -3,7 +3,7 @@ import time
 import csv
 import os
 
-INSTANCIAS = ["E016-03m.dat", "E021-04m.dat", "E051-05e.dat", "E076-10e.dat"]
+INSTANCIAS = ["E045-04f.dat", "E051-05e.dat", "E072-04f.dat", "E076-07u.dat", "E076-08u.dat", "E076-14u.dat", "E101-08e.dat", "E101-10c.dat", "E101-14u.dat", "E121-07c.dat", "E135-07f.dat", "E151-12c.dat", "E200-17b.dat","E200-17c.dat" ]
 HEURISTICAS = ["cw", "ni"]
 OPERADORES = ["", "relocate", "swap", "2opt", "relocate,swap", "relocate,2opt", "swap,2opt", "relocate,swap,2opt"]
 
